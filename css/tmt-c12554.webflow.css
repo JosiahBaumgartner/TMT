@@ -1,0 +1,85 @@
+.about-section {
+  background-color: #ddd;
+}
+
+.about-grid {
+  display: -ms-grid;
+  display: grid;
+  width: 90%;
+  margin-left: 5%;
+  grid-auto-columns: 1fr;
+  grid-column-gap: 16px;
+  grid-row-gap: 16px;
+  -ms-grid-columns: 1fr 1fr;
+  grid-template-columns: 1fr 1fr;
+  -ms-grid-rows: auto auto;
+  grid-template-rows: auto auto;
+}
+
+.services-card-grid {
+  display: -ms-grid;
+  display: grid;
+  width: 90%;
+  margin-right: auto;
+  margin-left: auto;
+  grid-auto-columns: 1fr;
+  grid-column-gap: 20px;
+  grid-row-gap: 0px;
+  -ms-grid-columns: 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr;
+  -ms-grid-rows: auto;
+  grid-template-rows: auto;
+}
+
+.service-card {
+  display: -ms-grid;
+  display: grid;
+  padding: 30px;
+  grid-auto-columns: 1fr;
+  grid-column-gap: 16px;
+  grid-row-gap: 16px;
+  -ms-grid-columns: 1fr;
+  grid-template-columns: 1fr;
+  -ms-grid-rows: auto auto auto;
+  grid-template-rows: auto auto auto;
+  border: 1px solid #000;
+  border-radius: 30px;
+  text-align: center;
+}
+
+.service-card-icon {
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.home-hero-heading {
+  width: 50%;
+  margin: 10% auto auto;
+  font-size: 50px;
+  text-align: center;
+}
+
+.heading {
+  text-align: center;
+}
+
+.subjects-grid {
+  display: -ms-grid;
+  display: grid;
+  width: 90%;
+  margin-top: 31px;
+  margin-right: auto;
+  margin-left: auto;
+  grid-auto-columns: 1fr;
+  grid-column-gap: 16px;
+  grid-row-gap: 16px;
+  -ms-grid-columns: 1fr 1fr;
+  grid-template-columns: 1fr 1fr;
+  -ms-grid-rows: auto;
+  grid-template-rows: auto;
+}
+
+.subjects-header {
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
