@@ -9,26 +9,35 @@ const timeDiv = document.querySelector("#time-div");
 const locationDiv = document.querySelector("#location-div");
 const submitButton = document.querySelector("#submitButton");
 const textbox = document.querySelector("#textbox");
+
+const nameRegex = /^[a-zA-Z][a-zA-Z ]+/;
+const emailRegex = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+const phoneRegex = /^\(?([0-9]{3})\)?[-. ]?([0-9]{3})[-. ]?([0-9]{4})$/;
+
 let step = 0;
 let name = "";
 
 function nextStep() {
   event.preventDefault();
-  step++;
+  if (step === 0 && nameRegex.test(nameInput.value)) {
+    step = 1;
+  }
   console.log(step);
-
-  if( step === 1 ) {
+  if ( step === 1 ) {
+    step = 2;
     hide(nameInput);
     name = nameInput.value;
     header1.innerHTML = name + ", if you’re in a hurry we’ll just take a phone number and/or an email at this point,<br>but it would be nice if you could tell us what’s going on. (Just 4 more questions)";
     show(phoneNumberInput);
     show(emailAddressInput);
-  } else if ( step === 2 ) {
+  } else if ( (step === 2 && emailRegex.test(emailAddressInput.value)) || (step === 2 && phoneRegex.test(phoneNumberInput.value)) ) {
+    step = 3;
     header1.innerHTML = "We can help you learn lots of different things!<br>What subject(s) would you like tutoring in?";
     hide(phoneNumberInput);
     hide(emailAddressInput);
     show(subjectInput);
-  } else if ( step === 3 ) {
+ } else if ( step === 3 ) {
+    step++;
     header1.innerHTML = "When are you available for tutoring?<br>(Please give us several options)";
     hide(subjectInput);
     for (let i=0; i<timeDiv.children.length; i++){
@@ -36,6 +45,7 @@ function nextStep() {
       showInline(timeDiv.children[i].children[0].children[0]);
     }
   } else if ( step === 4 ) {
+    step++;
     header1.innerHTML = "Are you interested in online or in person tutoring?<br>If in person, approximately where would you like your sessions to be located?";
     for (let i=0; i<timeDiv.children.length; i++){
       hide(timeDiv.children[i]);
@@ -48,12 +58,14 @@ function nextStep() {
     showInline(document.querySelector("#in-person-tutoring"));
     showInline(document.querySelector("#online-tutoring"));
   } else if (step === 5) {
+    step++;
     header1.innerHTML = "Leave us anything else you’d like to tell us.<br>We’re listening to you?";
     for (let i=0; i<locationDiv.children.length; i++){
       hide(locationDiv.children[i]);
     }
     show(textbox);
   } else if (step === 6) {
+    step++;
     header1.innerHTML = "Great!<br>Does all this look correct to you?";
     hide(button);
     hide(textbox);
