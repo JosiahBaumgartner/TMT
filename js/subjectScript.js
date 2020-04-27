@@ -4,7 +4,7 @@ const grid = document.getElementById("subjectGrid");
 const subjects = ["Math", "Sciences", "English", "Standardized Tests"]
 const math = {subjectName: "Math", subjectTypes: ["5th Grade Math","6th Grade Math","7th Grade Math","8th Grade Math","Pre-Algebra","Algebra 1", "Geometry", "Algebra 2", "Trigonometry", "Precalculus", "Calculus", "AP Calculus AB", "AP Calculus BC", "IB Math SL", "IB Math HL"]};
 const sciences = {subjectName: "Sciences", subjectTypes: ["General Science","Physics","Chemistry","Honor Physics","Honor Chemistry","AP Physics 1", "AP Physics 2", "AP Physics C Mechanics", "AP Physics C E&M", "IB Physics SL", "IB Physics HL", "AP Chemistry", "IB Chemistry SL", "IB Chemistry HL"]};
-const english = {subjectName: "English", subjectTypes: ["Critical Reading","Writing","ESL","College Application Essays","AP English Literature and Composition","IB Literature"]};
+const english = {subjectName: "English", subjectTypes: ["Critical Reading","Writing","ESL","College Application Essays","AP English Literature/Composition","IB Literature"]};
 const standardizedtests = {subjectName: "Standardized Tests", subjectTypes: ["PSAT","ACT","SAT","SAT Subject Math 1","SAT Subject Math 2","SAT Subject Chemistry", "SAT Subject Physics", "SAT Essay Writing"]};
 
 function swapHeader(subject){
@@ -31,6 +31,8 @@ function swapList(subject, nested){
   for (i = 0; i < subject.length; i++) {
     list.appendChild(document.createElement("li"));
     list.lastElementChild.innerHTML = subject[i];
+    list.lastElementChild.classList.add("subject");
+
   }
 
 }
