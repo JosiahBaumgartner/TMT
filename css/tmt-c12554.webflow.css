@@ -184,12 +184,18 @@
   padding-left: 0px;
 }
 
+.about-photo {
+  width: 100%;
+}
+
 .h1 {
   background-color: #ddd;
   text-align: center;
 }
 
 .h1.home-hero {
+  margin-right: auto;
+  margin-left: auto;
   background-color: hsla(0, 0%, 86.7%, 0);
 }
 
@@ -351,7 +357,7 @@
   padding: 20px;
 }
 
-.field-label {
+.form-label {
   color: #2c8a94;
 }
 
@@ -417,5 +423,138 @@
 
 .day-div {
   display: inline-block;
-  width: 13%;
+  width: 13.8%;
+}
+
+.heading-2 {
+  text-align: center;
+}
+
+@media screen and (max-width: 991px) {
+  .about-grid {
+    -ms-grid-columns: 1fr;
+    grid-template-columns: 1fr;
+    -ms-grid-rows: auto auto auto auto;
+    grid-template-rows: auto auto auto auto;
+  }
+  .services-card-grid {
+    grid-row-gap: 20px;
+    -ms-grid-columns: 1fr;
+    grid-template-columns: 1fr;
+    -ms-grid-rows: auto auto auto;
+    grid-template-rows: auto auto auto;
+  }
+  .home-hero-heading {
+    width: 100%;
+    margin-top: 25%;
+  }
+  .subjects-grid {
+    -ms-grid-columns: 1fr;
+    grid-template-columns: 1fr;
+    -ms-grid-rows: auto auto;
+    grid-template-rows: auto auto;
+  }
+  .h1 {
+    width: 80%;
+    margin-right: auto;
+    margin-left: auto;
+    background-color: transparent;
+  }
+  .h1.home-hero {
+    width: 80%;
+    margin-right: auto;
+    margin-left: auto;
+  }
+  .mission-content-div {
+    width: 80%;
+  }
+  .core-values-div {
+    width: 90%;
+  }
+  .core-values-grid {
+    -ms-grid-columns: 1fr;
+    grid-template-columns: 1fr;
+    -ms-grid-rows: auto auto auto;
+    grid-template-rows: auto auto auto;
+  }
+  .about-team-div {
+    width: 80%;
+  }
+  .team-member-photo {
+    width: 50%;
+  }
+  .services-hero-section {
+    background-color: #ddd;
+  }
+  .services-summary-div {
+    width: 80%;
+  }
+  .service-summary-div {
+    width: 80%;
+  }
+  .service-testimonials-div {
+    width: 80%;
+  }
+  .service-price-grid {
+    width: 80%;
+    -ms-grid-columns: 1fr;
+    grid-template-columns: 1fr;
+    -ms-grid-rows: auto auto auto;
+    grid-template-rows: auto auto auto;
+  }
+  .contact-form {
+    width: 80%;
+  }
+  .image-2 {
+    width: 30vw;
+  }
+  .background-video {
+    height: 74vh;
+  }
+  .footer-cta {
+    width: 20%;
+  }
+  .home-hero-cta {
+    width: 20%;
+    margin-top: 10%;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .home-hero-heading {
+    width: 100%;
+  }
+  .footer-cta {
+    width: 50%;
+  }
+  .home-hero-cta {
+    width: 50%;
+  }
+}
+
+@media screen and (max-width: 479px) {
+  .home-hero-heading {
+    width: 100%;
+  }
+  .h1.home-hero {
+    width: 100%;
+  }
+  .mission-content-div {
+    width: 90%;
+  }
+  .core-values-div {
+    width: 90%;
+  }
+  .about-team-div {
+    width: 90%;
+  }
+  .team-member-photo {
+    width: 100%;
+  }
+  .services-summary-div {
+    width: 90%;
+  }
+  .contact-form {
+    width: 90%;
+  }
 }
