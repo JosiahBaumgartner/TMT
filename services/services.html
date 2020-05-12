@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <!--  This site was created in Webflow. http://www.webflow.com  -->
-<!--  Last Published: Mon May 04 2020 06:02:42 GMT+0000 (Coordinated Universal Time)  -->
+<!--  Last Published: Tue May 12 2020 19:17:55 GMT+0000 (Coordinated Universal Time)  -->
 <html data-wf-page="5ea4c054808bdf5c7c8df692" data-wf-site="5ea34728f5d12a532413614f">
 <head>
   <meta charset="utf-8">
@@ -19,13 +19,11 @@
   <link href="../images/favicon.ico" rel="shortcut icon" type="image/x-icon">
   <link href="../images/webclip.png" rel="apple-touch-icon">
 </head>
-<body>
-  <div data-collapse="medium" data-animation="default" data-duration="400" data-doc-height="1" class="navbar w-nav">
-    <div class="w-container"><a href="#" class="brand w-nav-brand"><img src="../images/TMT-Logo.svg" alt="" class="image-2"></a>
-      <nav role="navigation" class="w-nav-menu"><a href="../index.html" class="w-nav-link">Home</a><a href="../about.html" class="w-nav-link">About</a><a href="../services/services.html" aria-current="page" class="w-nav-link w--current">Services</a><a href="../contact.html" class="w-nav-link">Contact</a></nav>
-      <div class="w-nav-button">
-        <div class="w-icon-nav-menu"></div>
-      </div>
+<body class="body-2">
+  <div data-collapse="medium" data-animation="default" data-duration="400" data-doc-height="1" role="banner" class="navbar w-nav"><a href="../index.html" class="brand w-nav-brand"><img src="../images/TMT-Logo.svg" alt="" class="image-2"></a>
+    <nav role="navigation" class="nav-menu w-nav-menu"><a href="../index.html" class="nav-link w-nav-link">Home</a><a href="../about.html" class="nav-link w-nav-link">About</a><a href="../services/services.html" aria-current="page" class="nav-link w-nav-link w--current">Services</a><a href="../contact.html" class="nav-link cta w-nav-link">Let&#x27;s Begin</a></nav>
+    <div class="w-nav-button">
+      <div class="w-icon-nav-menu"></div>
     </div>
   </div>
   <div class="services-hero-section">
@@ -44,15 +42,24 @@
     <h2 class="h2">Services Offered</h2>
     <div class="services-card-grid">
       <div class="service-card">
-        <h3 class="service-card-header">In-Home Private Tutoring Services</h3><img src="https://d3e54v103j8qbb.cloudfront.net/plugins/Basic/assets/placeholder.60f9b1840c.svg" alt="" class="service-card-icon">
+        <h3 class="service-card-header">In-Home Private Tutoring Services</h3>
+        <div class="service-icon-div"><img src="https://d3e54v103j8qbb.cloudfront.net/plugins/Basic/assets/placeholder.60f9b1840c.svg" alt="" class="service-card-icon">
+          <div class="line"></div>
+        </div>
         <p class="service-card-content">One-on-one academic tutoring to encourage students to internalize concepts. We patiently take the time so that the students feel comfortable applying what they learn. With hectic schedules in mind, we flexibly adapt the meeting location and time to student’s needs.<br><br>Whether a middle school student looking for a good chemistry tutor, or a student with learning disabilities looking for a SAT subject tutor to get into an Ivy college, great quality tutoring should be available to students of all backgrounds. We at TMT will give our best, adapt and respect all to deliver the Portland Quality to all in Portland, Oregon.</p>
       </div>
       <div class="service-card">
-        <h3 class="service-card-header">Online Private Tutoring Services</h3><img src="https://d3e54v103j8qbb.cloudfront.net/plugins/Basic/assets/placeholder.60f9b1840c.svg" alt="" class="service-card-icon">
+        <h3 class="service-card-header">Online Private Tutoring Services</h3>
+        <div class="service-icon-div"><img src="https://d3e54v103j8qbb.cloudfront.net/plugins/Basic/assets/placeholder.60f9b1840c.svg" alt="" class="service-card-icon">
+          <div class="line"></div>
+        </div>
         <p class="service-card-content">One-on-one academic tutoring done online. We actively engage our students by sharing a dynamic whiteboard, and interacting through video. Not only do we accept students with crazy schedules, but also students out of state looking for quality tutoring services.<br><br>Whether a middle school student looking for a good chemistry tutor, or a student with learning disabilities looking for a SAT subject tutor to get into an Ivy college, great quality tutoring should be available to students of all backgrounds. We at TMT will give our best, adapt and respect all to deliver the Portland Quality to all, even to those outside of Portland, Oregon.</p>
       </div>
       <div class="service-card">
-        <h3 class="service-card-header">SAT/ACT Essentials Preparation Courses</h3><img src="https://d3e54v103j8qbb.cloudfront.net/plugins/Basic/assets/placeholder.60f9b1840c.svg" alt="" class="service-card-icon">
+        <h3 class="service-card-header">SAT/ACT Essentials Preparation Courses</h3>
+        <div class="service-icon-div"><img src="https://d3e54v103j8qbb.cloudfront.net/plugins/Basic/assets/placeholder.60f9b1840c.svg" alt="" class="service-card-icon">
+          <div class="line"></div>
+        </div>
         <p class="service-card-content">4 week SAT/ACT prep class limited to 6 students. We will dedicate a full day each week for taking a practice test and reviewing essential concepts for the Math and English portions of the test. We aim to achieve ideal scores in one shot.<br><br>Whether it be IB tests, AP tests or the SAT, students should prepare properly. Our great tutors are well acquainted with the structure of the test, which enables them to teach skills and understanding, not just tricks for better guessing. We’re not here to simply have students get through a test. We’re here to make an impact on the academic career of our students and leave them with skills that last.</p>
       </div>
     </div>
@@ -60,7 +67,7 @@
   <div class="subject-section">
     <div id="subjectGrid" class="subjects-grid">
       <h2 id="subjectHeader" class="subjects-header">Subjects Taught</h2>
-      <ul id="subjectList" class="subject-list w-list-unstyled">
+      <ul id="subjectList" role="list" class="subject-list w-list-unstyled">
         <li class="subject">Math</li>
         <li class="subject">Sciences</li>
         <li class="subject">Literature</li>
@@ -68,10 +75,10 @@
       </ul>
     </div>
   </div>
-  <div class="footer"><a href="#" class="footer-cta w-button">Let&#x27;s Begin</a><a href="#" target="_blank" class="footer-phone">Phone</a><a href="#" class="footer-email">Email</a></div>
+  <div class="footer"><a href="#" class="footer-cta w-button">Let&#x27;s Begin</a><a href="#" target="_blank" class="footer-phone">(949) 887-5545</a><a href="#" class="footer-email">tmt.teaching@gmail.com</a></div>
   <script src="https://d3e54v103j8qbb.cloudfront.net/js/jquery-3.4.1.min.220afd743d.js?site=5ea34728f5d12a532413614f" type="text/javascript" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
-  <script src="js/webflow.js" type="text/javascript"></script>
+  <script src="../js/webflow.js" type="text/javascript"></script>
   <!-- [if lte IE 9]><script src="https://cdnjs.cloudflare.com/ajax/libs/placeholders/3.0.2/placeholders.min.js"></script><![endif] -->
-  <script src="js/subjectScript.js" type="text/javascript"></script>
+  <script src="../js/subjectScript.js" type="text/javascript"></script>
 </body>
 </html>
