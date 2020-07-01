@@ -313,6 +313,26 @@ body {
   text-align: center;
 }
 
+.subject.sub {
+  display: inline;
+  width: 100%;
+  height: auto;
+  margin: 0px 0%;
+  padding: 0px;
+  -webkit-box-flex: 0;
+  -webkit-flex: 0 auto;
+  -ms-flex: 0 auto;
+  flex: 0 auto;
+  border-style: none;
+  border-radius: 0px;
+  background-color: transparent;
+  color: #fff;
+  font-size: 20px;
+  line-height: 20px;
+  text-align: left;
+  list-style-type: none;
+}
+
 .about-photo {
   position: static;
   top: -50px;
@@ -1861,4 +1881,3 @@ body {
     grid-row-start: span 1;
   }
 }
-
