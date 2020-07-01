@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="362.20264"
+   height="184.62856"
+   viewBox="0 0 362.20264 184.62856"
+   version="1.1"
+   id="svg23"
+   sodipodi:docname="Grad Cap.svg"
+   inkscape:version="0.92.4 (5da689c313, 2019-01-14)">
+  <metadata
+     id="metadata27">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <sodipodi:namedview
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1"
+     objecttolerance="10"
+     gridtolerance="10"
+     guidetolerance="10"
+     inkscape:pageopacity="0"
+     inkscape:pageshadow="2"
+     inkscape:window-width="1920"
+     inkscape:window-height="1001"
+     id="namedview25"
+     showgrid="false"
+     inkscape:pagecheckerboard="true"
+     fit-margin-top="0"
+     fit-margin-left="0"
+     fit-margin-right="0"
+     fit-margin-bottom="0"
+     inkscape:zoom="0.69009481"
+     inkscape:cx="106.4735"
+     inkscape:cy="142.40038"
+     inkscape:window-x="-9"
+     inkscape:window-y="1341"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="svg23" />
+  <defs
+     id="defs4">
+    <style
+       id="style2">
+      .cls-1, .cls-2, .cls-4 {
+        fill: #125f68;
+      }
+
+      .cls-1, .cls-2, .cls-3 {
+        stroke-linecap: round;
+      }
+
+      .cls-1 {
+        stroke-linejoin: round;
+      }
+
+      .cls-3 {
+        fill: none;
+        stroke: #fefefe;
+        stroke-width: 8px;
+      }
+
+      .cls-5, .cls-6 {
+        stroke: none;
+      }
+
+      .cls-6 {
+        fill: #fefefe;
+      }
+    </style>
+  </defs>
+  <g
+     id="Grad_Cap"
+     data-name="Grad Cap"
+     transform="translate(-840.45907,-313.87482)">
+    <g
+       id="Path_41"
+       data-name="Path 41"
+       class="cls-1"
+       transform="translate(897.664,362.032)"
+       style="fill:#125f68;stroke-linecap:round;stroke-linejoin:round">
+      <path
+         class="cls-5"
+         d="M 107.458,132.23715 4.0000196,94.599106 V 4.0000072 H 221.29137 V 94.512054 Z"
+         id="path6"
+         inkscape:connector-curvature="0"
+         style="stroke:none" />
+      <path
+         class="cls-6"
+         d="M 8,7.9999847 V 91.797806 L 107.5192,128.00293 217.29135,91.623734 V 7.9999847 H 8 M 0,-1.5258789e-5 H 225.29135 V 97.400375 L 107.39682,136.47137 0,97.400375 Z"
+         id="path8"
+         inkscape:connector-curvature="0"
+         style="fill:#fefefe;stroke:none" />
+    </g>
+    <g
+       id="Path_40"
+       data-name="Path 40"
+       class="cls-2"
+       transform="rotate(45,282.69855,1314.5066)"
+       style="fill:#125f68;stroke-linecap:round">
+      <path
+         class="cls-5"
+         d="M 10.09832,233.75111 90.222977,97.701988 230.92667,10.696595 155.82083,164.04707 Z"
+         id="path11"
+         inkscape:connector-curvature="0"
+         style="stroke:none" />
+      <path
+         class="cls-6"
+         d="M 221.23386,21.393219 93.167786,100.584 20.196701,224.48665 152.84026,161.03873 221.23386,21.393219 M 240.61948,0 158.80142,167.05542 0,243.01553 87.278168,94.819962 Z"
+         id="path13"
+         inkscape:connector-curvature="0"
+         style="fill:#fefefe;stroke:none" />
+    </g>
+    <path
+       id="Path_42"
+       data-name="Path 42"
+       class="cls-3"
+       d="m -10162.951,-17833 h 157.353 v 22.5"
+       transform="translate(11184.335,18192.104)"
+       inkscape:connector-curvature="0"
+       style="fill:none;stroke:#fefefe;stroke-width:8px;stroke-linecap:round" />
+    <g
+       id="Path_43"
+       data-name="Path 43"
+       class="cls-4"
+       transform="translate(1154.385,399.37)"
+       style="fill:#125f68">
+      <path
+         class="cls-5"
+         d="M 44.276722,40.275993 H 4.0000062 V -1.0924873 L 24.457985,-15.671184 44.276722,-1.1276166 Z"
+         id="path17"
+         inkscape:connector-curvature="0"
+         style="stroke:none" />
+      <path
+         class="cls-6"
+         d="M 24.423599,-10.734966 7.9999924,0.96876717 V 36.275986 H 40.276711 V 0.89851761 L 24.423599,-10.734966 m 0.06876,-9.872464 23.784352,17.4536653 V 44.275986 H -7.6293945e-6 V -3.1537647 Z"
+         id="path19"
+         inkscape:connector-curvature="0"
+         style="fill:#fefefe;stroke:none" />
+    </g>
+  </g>
+</svg>
