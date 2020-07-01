@@ -137,7 +137,7 @@ function swapList(subject, nested){
   for (i = 0; i < subject.length; i++) {
     list.appendChild(document.createElement("li"));
     list.lastElementChild.innerHTML = subject[i];
-    list.lastElementChild.classList.add("subject.sub");
+    list.lastElementChild.classList.add("subject");
   }
 }
 grid.addEventListener("click", function() {
