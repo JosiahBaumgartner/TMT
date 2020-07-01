@@ -139,8 +139,10 @@ function swapList(subject, nested){
     list.lastElementChild.innerHTML = subject[i];
       if(header ==! "Choose A Subject"){
         list.lastElementChild.classList.add("spec-subject");
+        list.lastElementChild.classList.remove("subject");
       } else {
         list.lastElementChild.classList.add("subject");
+        list.lastElementChild.classList.remove("spec-subject");
       }
   }
 }
