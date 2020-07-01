@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <!--  This site was created in Webflow. http://www.webflow.com  -->
-<!--  Last Published: Wed Jul 01 2020 01:50:59 GMT+0000 (Coordinated Universal Time)  -->
+<!--  Last Published: Wed Jul 01 2020 02:44:58 GMT+0000 (Coordinated Universal Time)  -->
 <html data-wf-page="5ea34728f5d12ab044136150" data-wf-site="5ea34728f5d12a532413614f">
 <head>
   <meta charset="utf-8">
@@ -97,11 +97,24 @@
   <div class="subject-section">
     <div id="subjectGrid" class="subjects-grid">
       <h2 id="subjectHeader" class="subjects-header">Choose a Subject</h2>
-      <ul id="subjectList" role="list" class="subject-list w-list-unstyled">
+      <ul id="subjectList" role="list" class="subject-list main w-list-unstyled">
         <li class="subject">Math</li>
         <li class="subject">Sciences</li>
         <li class="subject">Literature</li>
         <li class="subject">Test Prep</li>
+      </ul>
+    </div>
+  </div>
+  <div class="subject-section hidden">
+    <div id="subjectGrid" class="subjects-grid hidden">
+      <h2 id="subjectHeader" class="subjects-header">Choose a Subject</h2>
+      <ul id="subjectList" role="list" class="subject-list w-list-unstyled">
+        <li class="spec-subject">Critical Reading</li>
+        <li class="spec-subject">ESL</li>
+        <li class="spec-subject">College Application Essays</li>
+        <li class="spec-subject">Writing</li>
+        <li class="spec-subject">AP English Lit/Comp</li>
+        <li class="spec-subject">IB Literature</li>
       </ul>
     </div>
   </div>
@@ -116,7 +129,7 @@ const grid = document.getElementById("subjectGrid");
 const subjects = ["Math", "Sciences", "English", "Standardized Tests"]
 const math = {subjectName: "Math", subjectTypes: ["5th Grade Math","6th Grade Math","7th Grade Math","8th Grade Math","Pre-Algebra","Algebra 1", "Geometry", "Algebra 2", "Trigonometry", "Precalculus", "Calculus", "AP Calculus AB", "AP Calculus BC", "IB Math SL", "IB Math HL"]};
 const sciences = {subjectName: "Sciences", subjectTypes: ["General Science","Physics","Chemistry","Honor Physics","Honor Chemistry","AP Physics 1", "AP Physics 2", "AP Physics C Mechanics", "AP Physics C E&M", "IB Physics SL", "IB Physics HL", "AP Chemistry", "IB Chemistry SL", "IB Chemistry HL"]};
-const english = {subjectName: "English", subjectTypes: ["Critical Reading","Writing","ESL","College Application Essays","AP English Lit/Comp","IB Literature"]};
+const english = {subjectName: "English", subjectTypes: ["Critical Reading","Writing","ESL","College Application Essays","AP English Literature/Composition","IB Literature"]};
 const standardizedtests = {subjectName: "Standardized Tests", subjectTypes: ["PSAT","ACT","SAT","SAT Subject Math 1","SAT Subject Math 2","SAT Subject Chemistry", "SAT Subject Physics", "SAT Essay Writing"]};
 function swapHeader(subject){
 header.textContent = subject;
