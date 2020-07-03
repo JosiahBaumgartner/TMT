@@ -138,7 +138,7 @@ function swapList(subject, nested){
   for (i = 0; i < subject.length; i++) {
     list.appendChild(document.createElement("li"));
     list.lastElementChild.innerHTML = subject[i];
-      if(header ==! "Choose A Subject"){
+      if(header === "Choose A Subject"){
         list.lastElementChild.classList.add("spec-subject");
         list.lastElementChild.classList.remove("subject");
       } else {
