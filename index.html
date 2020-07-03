@@ -113,7 +113,7 @@
 const header = document.getElementById("subjectHeader");
 const list = document.getElementById("subjectList");
 const grid = document.getElementById("subjectGrid");
-const subjects = ["Math", "Sciences", "English", "Standardized Tests"]
+const subjects = ["Math", "Sciences", "English", "Test Prep"]
 const math = {subjectName: "Math", subjectTypes: ["5th Grade Math","6th Grade Math","7th Grade Math","8th Grade Math","Pre-Algebra","Algebra 1", "Geometry", "Algebra 2", "Trigonometry", "Precalculus", "Calculus", "AP Calculus AB", "AP Calculus BC", "IB Math SL", "IB Math HL"]};
 const sciences = {subjectName: "Sciences", subjectTypes: ["General Science","Physics","Chemistry","Honor Physics","Honor Chemistry","AP Physics 1", "AP Physics 2", "AP Physics C Mechanics", "AP Physics C E&M", "IB Physics SL", "IB Physics HL", "AP Chemistry", "IB Chemistry SL", "IB Chemistry HL"]};
 const english = {subjectName: "English", subjectTypes: ["Critical Reading","Writing","ESL","College Application Essays","AP English Lit/Comp","IB Literature"]};
@@ -130,7 +130,7 @@ function appendBackButton(){
   list.lastElementChild.innerHTML = "Back to Subjects";
 }
 function swapList(subject, nested){
-  if(header ==! "Choose A Subject"){
+  if(header === "Choose A Subject"){
     clearList();
   } else {
     clearList(true);
@@ -141,9 +141,11 @@ function swapList(subject, nested){
       if(header.textContent ==! "Choose A Subject"){
         list.lastElementChild.classList.add("spec-subject");
         list.lastElementChild.classList.remove("subject");
+        console.log("Should be showing babbie subjects")
       } else {
         list.lastElementChild.classList.add("subject");
         list.lastElementChild.classList.remove("spec-subject");
+        console.log("Should be showing categories")
       }
   }
 }
