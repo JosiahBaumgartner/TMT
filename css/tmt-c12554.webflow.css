@@ -1300,6 +1300,7 @@ body {
 }
 
 .bottom-slider-closed {
+  transition: left 0.25s ease-out;
   position: relative;
   z-index: 9999;
   display: block;
@@ -1314,6 +1315,7 @@ body {
 }
 
 .top-slider-closed {
+  transition: left 0.25s ease-out;
   position: relative;
   left: -100%;
   top: -100%;
@@ -1330,6 +1332,7 @@ body {
 }
 
 .bottom-slider-open {
+  transition: left 0.25s ease-out;
   position: relative;
   left: -100%;
   display: block;
@@ -1344,6 +1347,7 @@ body {
 }
 
 .top-slider-open {
+  transition: left 0.25s ease-out;
   position: relative;
   left: auto;
   top: -100%;
@@ -2128,4 +2132,3 @@ body {
     align-self: auto;
   }
 }
-
