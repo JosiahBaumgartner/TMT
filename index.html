@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <!--  This site was created in Webflow. http://www.webflow.com  -->
-<!--  Last Published: Wed Jul 01 2020 01:50:59 GMT+0000 (Coordinated Universal Time)  -->
+<!--  Last Published: Sat Jul 04 2020 23:17:35 GMT+0000 (Coordinated Universal Time)  -->
 <html data-wf-page="5ea34728f5d12ab044136150" data-wf-site="5ea34728f5d12a532413614f">
 <head>
   <meta charset="utf-8">
@@ -96,13 +96,41 @@
   </div>
   <div class="subject-section">
     <div id="subjectGrid" class="subjects-grid">
-      <h2 id="subjectHeader" class="subjects-header">Choose a Subject</h2>
-      <ul id="subjectList" role="list" class="subject-list w-list-unstyled">
-        <li class="subject">Math</li>
-        <li class="subject">Sciences</li>
-        <li class="subject">English</li>
-        <li class="subject">Test Prep</li>
-      </ul>
+      <div id="w-node-cb630fc44420-07a1e3d7" class="subject-header-div">
+        <h2 id="subjectHeader" class="subjects-header">Choose a Subject</h2>
+      </div>
+      <div class="back-button-div">
+        <div class="bottom-slider-closed"></div>
+        <div class="top-slider-closed"></div>
+        <p class="back-to-subjects">Back to<br>Subjects</p>
+      </div>
+      <div class="subject-div">
+        <ul id="subjectList" role="list" class="subject-list w-list-unstyled">
+          <li class="subject">Math</li>
+          <li class="subject">Sciences</li>
+          <li class="subject">English</li>
+          <li class="subject">Test Prep</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <div class="subject-section hidden">
+    <div id="subjectGrid" class="subjects-grid hidden">
+      <div class="subject-header-div">
+        <h2 id="subjectHeader" class="subjects-header">Choose a Subject</h2>
+      </div>
+      <div class="back-button-div"></div>
+      <div class="subject-div">
+        <ul id="subjectList" role="list" class="subject-list-open w-list-unstyled">
+          <li class="spec-subject">Critical Reading</li>
+          <li class="spec-subject">ESL</li>
+          <li class="spec-subject">College Application Essays</li>
+          <li class="spec-subject">Writing</li>
+          <li class="spec-subject">AP English Lit/Comp</li>
+          <li class="spec-subject">IB Literature</li>
+        </ul>
+        <p class="back-to-subjects">Back to<br>Subjects</p>
+      </div>
     </div>
   </div>
   <div class="footer"><a href="contact.html" class="footer-cta w-button">LET&#x27;S BEGIN</a><a href="tel:+19498875545" class="footer-phone">(949) 887-5545</a><a href="#" class="footer-email">take@tmt-teaching.com</a></div>
@@ -118,7 +146,6 @@ const math = {subjectName: "Math", subjectTypes: ["5th Grade Math","6th Grade Ma
 const sciences = {subjectName: "Sciences", subjectTypes: ["General Science","Physics","Chemistry","Honor Physics","Honor Chemistry","AP Physics 1", "AP Physics 2", "AP Physics C Mechanics", "AP Physics C E&M", "IB Physics SL", "IB Physics HL", "AP Chemistry", "IB Chemistry SL", "IB Chemistry HL"]};
 const english = {subjectName: "English", subjectTypes: ["Critical Reading","Writing","ESL","College Application Essays","AP English Lit/Comp","IB Literature"]};
 const standardizedtests = {subjectName: "Test Prep", subjectTypes: ["PSAT","ACT","SAT","SAT Subject Math 1","SAT Subject Math 2","SAT Subject Chemistry", "SAT Subject Physics", "SAT Essay Writing"]};
-
 function swapHeader(subject){
 header.textContent = subject;
 }
@@ -126,11 +153,9 @@ function clearList(){
   list.innerHTML="";
 }
 function appendBackButton(){
-  list.appendChild(document.createElement("li"));
-  list.lastElementChild.innerHTML = "Back to Subjects";
 }
 function swapList(subject, nested){
-  if(header === "Choose A Subject"){
+  if(header === "Choose a Subject"){
     clearList();
   } else {
     clearList(true);
@@ -138,7 +163,7 @@ function swapList(subject, nested){
   for (i = 0; i < subject.length; i++) {
     list.appendChild(document.createElement("li"));
     list.lastElementChild.innerHTML = subject[i];
-      if(header.textContent !== "Choose A Subject"){
+      if(header.textContent !== "Choose a Subject"){
         list.lastElementChild.classList.add("spec-subject");
         list.lastElementChild.classList.remove("subject");
         console.log("Should be showing babbie subjects")
@@ -166,8 +191,8 @@ grid.addEventListener("click", function() {
     swapHeader(event.target.textContent);
     swapList(standardizedtests.subjectTypes);
     appendBackButton();
-  } else if (event.target.textContent === "Back to Subjects") {
-    swapHeader("Choose A Subject");
+  } else if (event.target.textContent === "Back toSubjects") {
+    swapHeader("Choose a Subject");
     swapList(subjects);
   }
 });
