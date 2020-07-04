@@ -157,17 +157,17 @@ function clearList(){
 }
 function openBackButtonSliders(){
   console.log("open back button function run");
-  topSlider.classList.add(top-slider-open);
-  topSlider.classList.remove(top-slider-closed);
-  bottomSlider.classList.add(bottom-slider-open);
-  bottomSlider.classList.remove(bottom-slider-closed);
+  topSlider.classList.add("top-slider-open");
+  topSlider.classList.remove("top-slider-closed");
+  bottomSlider.classList.add("bottom-slider-open");
+  bottomSlider.classList.remove("bottom-slider-closed");
 }
 function closeBackButtonSliders(){
   console.log("open back button function run");
-  topSlider.classList.add(top-slider-closed);
-  topSlider.classList.remove(top-slider-open);
-  bottomSlider.classList.add(bottom-slider-closed);
-  bottomSlider.classList.remove(bottom-slider-open);
+  topSlider.classList.add("top-slider-closed");
+  topSlider.classList.remove("top-slider-open");
+  bottomSlider.classList.add("bottom-slider-closed");
+  bottomSlider.classList.remove("bottom-slider-open");
 }
 function swapList(subject, nested){
   if(header === "Choose a Subject"){
