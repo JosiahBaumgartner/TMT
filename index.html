@@ -100,8 +100,8 @@
         <h2 id="subjectHeader" class="subjects-header">Choose a Subject</h2>
       </div>
       <div class="back-button-div">
-        <div class="bottom-slider-closed"></div>
-        <div class="top-slider-closed"></div>
+        <div id="bottom-slider" class="bottom-slider-closed"></div>
+        <div id ="top-slider" class="top-slider-closed"></div>
         <p class="back-to-subjects">Back to<br>Subjects</p>
       </div>
       <div class="subject-div">
@@ -146,13 +146,28 @@ const math = {subjectName: "Math", subjectTypes: ["5th Grade Math","6th Grade Ma
 const sciences = {subjectName: "Sciences", subjectTypes: ["General Science","Physics","Chemistry","Honor Physics","Honor Chemistry","AP Physics 1", "AP Physics 2", "AP Physics C Mechanics", "AP Physics C E&M", "IB Physics SL", "IB Physics HL", "AP Chemistry", "IB Chemistry SL", "IB Chemistry HL"]};
 const english = {subjectName: "English", subjectTypes: ["Critical Reading","Writing","ESL","College Application Essays","AP English Lit/Comp","IB Literature"]};
 const standardizedtests = {subjectName: "Test Prep", subjectTypes: ["PSAT","ACT","SAT","SAT Subject Math 1","SAT Subject Math 2","SAT Subject Chemistry", "SAT Subject Physics", "SAT Essay Writing"]};
+const topSlider = document.querySelector("#top-slider");
+const bottomSlider = document.querySelector("#bottom-slider");
+
 function swapHeader(subject){
 header.textContent = subject;
 }
 function clearList(){
   list.innerHTML="";
 }
-function appendBackButton(){
+function openBackButtonSliders(){
+  console.log("open back button function run");
+  topSlider.classList.add(top-slider-open);
+  topSlider.classList.remove(top-slider-closed);
+  bottomSlider.classList.add(bottom-slider-open);
+  bottomSlider.classList.remove(bottom-slider-closed);
+}
+function closeBackButtonSliders(){
+  console.log("open back button function run");
+  topSlider.classList.add(top-slider-closed);
+  topSlider.classList.remove(top-slider-open);
+  bottomSlider.classList.add(bottom-slider-closed);
+  bottomSlider.classList.remove(bottom-slider-open);
 }
 function swapList(subject, nested){
   if(header === "Choose a Subject"){
@@ -166,11 +181,9 @@ function swapList(subject, nested){
       if(header.textContent !== "Choose a Subject"){
         list.lastElementChild.classList.add("spec-subject");
         list.lastElementChild.classList.remove("subject");
-        console.log("Should be showing babbie subjects")
       } else {
         list.lastElementChild.classList.add("subject");
         list.lastElementChild.classList.remove("spec-subject");
-        console.log("Should be showing categories")
       }
   }
 }
@@ -178,22 +191,23 @@ grid.addEventListener("click", function() {
   if (event.target.textContent === "Math"){
     swapHeader(event.target.textContent);
     swapList(math.subjectTypes);
-    appendBackButton();
+    openBackButtonSliders();
   } else if (event.target.textContent === "Sciences") {
     swapHeader(event.target.textContent);
     swapList(sciences.subjectTypes);
-    appendBackButton();
+    openBackButtonSliders();
   } else if (event.target.textContent === "English") {
     swapHeader(event.target.textContent);
     swapList(english.subjectTypes);
-    appendBackButton();
+    openBackButtonSliders();
   } else if (event.target.textContent === "Test Prep") {
     swapHeader(event.target.textContent);
     swapList(standardizedtests.subjectTypes);
-    appendBackButton();
+    openBackButtonSliders();
   } else if (event.target.textContent === "Back toSubjects") {
     swapHeader("Choose a Subject");
     swapList(subjects);
+    closeBackButtonSliders();
   }
 });
 </script>
