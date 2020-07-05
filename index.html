@@ -133,8 +133,19 @@ header.textContent = subject;
 function clearList(){
   list.innerHTML="";
 }
-function appendBackButton(){
+function openBackButtonSliders(){
+  console.log("open back button function run");
+  topSlider.classList.add("top-slider-open");
+  topSlider.classList.remove("top-slider-closed");
+  bottomSlider.classList.add("bottom-slider-open");
+  bottomSlider.classList.remove("bottom-slider-closed");
 }
+function closeBackButtonSliders(){
+  console.log("open back button function run");
+  topSlider.classList.add("top-slider-closed");
+  topSlider.classList.remove("top-slider-open");
+  bottomSlider.classList.add("bottom-slider-closed");
+  bottomSlider.classList.remove("bottom-slider-open");
 function swapList(subject, nested){
   if(header === "Choose a Subject"){
     clearList();
@@ -159,22 +170,23 @@ grid.addEventListener("click", function() {
   if (event.target.textContent === "Math"){
     swapHeader(event.target.textContent);
     swapList(math.subjectTypes);
-    appendBackButton();
+    openBackButtonSliders();
   } else if (event.target.textContent === "Sciences") {
     swapHeader(event.target.textContent);
     swapList(sciences.subjectTypes);
-    appendBackButton();
+    openBackButtonSliders();
   } else if (event.target.textContent === "English") {
     swapHeader(event.target.textContent);
     swapList(english.subjectTypes);
-    appendBackButton();
+    openBackButtonSliders();
   } else if (event.target.textContent === "Test Prep") {
     swapHeader(event.target.textContent);
     swapList(standardizedtests.subjectTypes);
-    appendBackButton();
+    openBackButtonSliders();
   } else if (event.target.textContent === "Back toSubjects") {
     swapHeader("Choose a Subject");
     swapList(subjects);
+    closeBackButtonSliders();
   }
 });
 </script>
