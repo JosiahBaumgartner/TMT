@@ -1276,7 +1276,7 @@ body {
   top: -123%;
   right: auto;
   bottom: auto;
-  z-index: 9990;
+  z-index: 9997;
   display: block;
   margin-bottom: 0px;
   padding-bottom: 0px;
@@ -1303,7 +1303,7 @@ body {
   transition: left 0.25s ease-out;
   position: relative;
   left: 0%;
-  z-index: 9997;
+  z-index: 9998;
   display: block;
   width: 100%;
   height: 100%;
@@ -1320,7 +1320,7 @@ body {
   position: relative;
   left: -100%;
   top: -100%;
-  z-index: 9998;
+  z-index: 9996;
   display: block;
   width: 100%;
   height: 100%;
@@ -1336,7 +1336,7 @@ body {
   transition: left 0.25s ease-out;
   position: relative;
   left: -100%;
-  z-index: 9997;
+  z-index: 9998;
   display: block;
   width: 100%;
   height: 100%;
@@ -1353,7 +1353,7 @@ body {
   position: relative;
   left: 0%;
   top: -100%;
-  z-index: 9998;
+  z-index: 9996;
   display: block;
   width: 100%;
   height: 100%;
