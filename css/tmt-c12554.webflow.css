@@ -1335,6 +1335,7 @@ body {
 .bottom-slider-open {
   transition: left 0.25s ease-out;
   position: relative;
+  left: -100%;
   z-index: 9997;
   display: block;
   width: 100%;
